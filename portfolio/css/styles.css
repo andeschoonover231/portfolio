@@ -1,0 +1,25 @@
+nav {
+    background: darkblue;
+    height: 8vh;
+    width: 100%;
+    display: absolute;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto;
+}
+
+article {
+    height: 80vh;
+    width: 100vw;
+    flex: 0 0 auto;
+}
+
+footer {
+    background: cyan;
+    height: 12vh;
+    width: 100%;
+    display: absolute;
+}
