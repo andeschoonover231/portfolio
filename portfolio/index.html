@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -17,21 +20,38 @@
 
     <main>
         <article id="title">
-            <h1>This is my Portfolio</h1>
-            <h4>and by me, I mean <span id="name">Ande Schoonover</span></h4>
+            <h2>this is my </h2>
+            <h1>Portfolio</h1>
+            <h3>and by me, I mean <span id="name">Ande Schoonover</span></h3>
         </article>
 
-        <article id="bio">
-            <h1>Content 2</h1>
+        <article class="page" id="bio">
+            <section>
+                <h1>Hiya, I'm Ande!</h1>
+
+                <p> I'm a passionate, hardworking, and dependable
+                    designer that values kindness over all else. I
+                    strive to create innovative work that appeals
+                    to all audiences without sacrificing usability.
+                </p>
+            </section>
+
+            <img src="./img/me.png" alt="">
         </article>
 
-        <article>
-            <h1>First Project</h1>
+        <article id="ux" class="portfolio">
+            <h1>Project Template</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam alias blanditiis consectetur reiciendis. Praesentium maiores enim, vel cupiditate ut eaque eos delectus, perferendis assumenda officia, itaque dicta asperiores dignissimos? Nam?</p>
         </article>
     </main>
 
     <footer>
-        <a href="#bio">Click</a>
+        <div>
+            <a href="#title">Title</a>
+            <a href="#bio">Bio</a>
+            <a href="#ux">UX</a>
+        </div>
     </footer>
 </body>
 </html>

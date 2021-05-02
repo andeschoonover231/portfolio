@@ -1,6 +1,24 @@
+/*  Colors  */
+html {
+    --color0: #ff0000;
+    --color1: #ffa500;
+    --color2: #fffb00;
+    --color3: #00aa00;
+    --color4: #00ccff;
+    --color5: #0000ff;
+    --color6: #4b0082;
+}
+
+
+/*  Set Up  */
+body {
+    overflow-y: hidden;
+    font-family: Dosis, sans-serif;
+}
+
 nav {
     background: darkblue;
-    height: 8vh;
+    height: 5vh;
     width: 100%;
     display: absolute;
 }
@@ -12,14 +30,98 @@ main {
 }
 
 article {
-    height: 80vh;
+    height: 87vh;
     width: 100vw;
     flex: 0 0 auto;
 }
 
+
+/* Title Page   */
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#title h1 {
+    font-size: 12em;
+    margin:0;
+    align-self: left;
+    padding-left: 15px;
+}
+
+#title h2 {
+    font-size: 4em;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding-left: 25px;
+}
+
+#title h3 {
+    align-self: flex-end;
+    margin-right: 75px;
+    font-weight: 500;
+    justify-self: flex-end;
+}
+
+#title span {
+    font-weight: 800;
+}
+
+
+/*  Bio Page    */
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+#bio h1 {
+    padding-left: 10px;
+}
+
+#bio p {
+    width: 300px;
+    padding-left: 68px;
+}
+
+#bio img {
+    width: 40vw;
+}
+
+/*  Portfolio Content Styles */
+
+.portfolio {
+    display: flex;
+}
+
+.portfolio p {
+    width: 300px;
+}
+
+
+/*  Footer  */
 footer {
-    background: cyan;
-    height: 12vh;
-    width: 100%;
+    background: linear-gradient(0.25turn, var(--color0), var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6));
+    height: 8vh;
+    width: 100vw;
     display: absolute;
+}
+
+footer div {
+    display: flex;
+    /*justify-content: space-around;*/
+}
+
+footer a {
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-left:25px;
+    padding-right: 25px;
+    font-weight: 700;
+    text-align: center;
+    height: 8vh;
 }
