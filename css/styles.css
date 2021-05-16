@@ -103,12 +103,15 @@ article {
 
 /*  Portfolio Content Styles */
 
-.portfolio {
-    display: flex;
+.portfolio section {
+    padding-top: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-areas: 1fr / 1fr 1fr 1fr 1fr;
 }
 
-.portfolio p {
-    width: 300px;
+
+
+.highlight img{
+    grid-column-start: span 2;
 }
-
-
