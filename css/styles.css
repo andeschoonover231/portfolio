@@ -1,32 +1,42 @@
 /*  Colors  */
 html {
-    --color0: #ff0000;
-    --color1: #ffa500;
-    --color2: #fffb00;
-    --color3: #00aa00;
-    --color4: #00ccff;
-    --color5: #0000ff;
+    --color0: #ce0000;
+    --color1: #ff9100;
+    --color2: #ffee00;
+    --color3: #009700;
+    --color4: #008cff;
+    --color5: #0000c4;
     --color6: #4b0082;
 }
 
 
 /*  Set Up  */
 body {
-    overflow-y: hidden;
     font-family: Dosis, sans-serif;
 }
 
 nav {
-    background: darkblue;
-    height: 5vh;
     width: 100%;
+    background: linear-gradient(0.25turn, var(--color0), var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6));
+    height: 8vh;
+    width: 100vw;
     display: absolute;
 }
 
-main {
+nav div {
+    height: 8vh;
     display: flex;
-    flex-wrap: nowrap; 
-    overflow: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    padding-left:25px;
+    padding-right: 25px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25em;
 }
 
 article {
@@ -102,26 +112,3 @@ article {
 }
 
 
-/*  Footer  */
-footer {
-    background: linear-gradient(0.25turn, var(--color0), var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6));
-    height: 8vh;
-    width: 100vw;
-    display: absolute;
-}
-
-footer div {
-    display: flex;
-    /*justify-content: space-around;*/
-}
-
-footer a {
-    color: white;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding-left:25px;
-    padding-right: 25px;
-    font-weight: 700;
-    text-align: center;
-    height: 8vh;
-}
